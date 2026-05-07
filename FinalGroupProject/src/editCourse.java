@@ -5,7 +5,7 @@ public class editCourse{
 
     public void editingCourse(String file, String targetCourse, String newTitle){
         File originalFile = new File(file);
-        File tempFile = new File("src\\\\BSIT_temporary.csv");
+        File tempFile = new File("src\\BSIT_temporary.csv");
 
                 try (Scanner courseChanger = new Scanner(originalFile);
                     PrintWriter writer = new PrintWriter(new FileWriter(tempFile))) {
