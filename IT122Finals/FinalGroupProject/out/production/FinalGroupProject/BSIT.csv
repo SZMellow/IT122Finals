@@ -1,0 +1,104 @@
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,SAINT LOUIS UNIVERSITY,,,,,,,,,,,,,,
+,"SCHOOL OF ACCOUNTANCY, MANAGEMENT, COMPUTING, & INFORMATION STUDIES (SAMCIS)",,,,,,,,,,,,,,
+,BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY (BSIT),,,,,,,,,,,,,,
+,Effective A.Y. 2018-2019,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,FIRST YEAR,Course No.,Course Descriptive Title,Units,Pre-requisite,,Course No.,Course Descriptive Title,Units,Pre-requisite,,,,,
+,,1st Semester,,,,,2nd Semester,,,,,,,,
+,,IT 111,Introduction to Computing,2,,,IT 121,Information System Fundamentals,3,IT 111,,,,,
+,,IT 111L,Introduction to Computing (Lab),1,,,IT 122,Computer Programming 2,2,IT 112,,,,,
+,,IT 112,Computer Programming 1,2,,,IT 122L,Computer Programming 2 (Lab),1,IT 112,,,,,
+,,IT 112L,Computer Programming 1 (Lab),1,,,IT 123,Platform Technologies,2,IT 111,,,,,
+,,IT 113,Discrete Mathematics,3,,,IT 123L,Platform Technologies (Lab),1,IT 111,,,,,
+,,GART,Art Appreciation,3,,,GMATH,Mathematics in the Modern World,3,,,,,,
+,,GSELF,Understanding the Self,3,,,GPCOM,Purposive Communication,3,,,,,,
+,,GHIST,Readings in Philippine History,3,,,GCWORLD,The Contemporary World,3,,,,,,
+,,FIT HW,Physical Activity Towards Health and Fitness (Health and Wellness),2,,,FIT CS,Physical Activity Towards Health and Fitness (Combative Sports),2,,,,,,
+,,CFE 101,God’s Journey with His People,3,,,CFE 102,Christian Morality in Our Times,3,,,,,,
+,,,TOTAL UNITS,23,,,,TOTAL UNITS,23,,,,,,
+,,,,,,,,,,,,,,,
+,,Course No.,Course Descriptive Title,Units,Pre-requisite,,,,,,,,,,
+,,Short Term,,,,,,,,,,,,,
+,,IT 131,Computer Architecture,2,IT 112,,,,,,,,,,
+,,IT 131L,Computer Architecture (Lab),1,IT 112,,,,,,,,,,
+,,GRIZAL,The Life and Works of Rizal,3,,,,,,,,,,,
+,,,TOTAL UNITS,6,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,SECOND YEAR,Course No.,Course Descriptive Title,Units,Pre-requisite,,Course No.,Course Descriptive Title,Units,Pre-requisite,,,,,
+,,1st Semester,,,,,2nd Semester,,,,,,,,
+,,IT 211,Requirements Analysis and Modeling,3,IT 121,,IT 221,Information Management,2,IT 212,,,,,
+,,IT 212,Data Structures,2,"IT 113, IT 122",,IT 221L,Information Management (Lab),1,IT 212,,,,,
+,,IT 212L,Data Structures (Lab),1,"IT 113, IT 122",,IT 222,Integrative Technologies,2,IT 122,,,,,
+,,IT 213,Network Fundamentals,2,"IT 131, IT 123",,IT 222L,Integrative Technologies (Lab),1,IT 122,,,,,
+,,IT 213L,Network Fundamentals (Lab),1,"IT 131, IT 123",,IT 223,Human Computer Interaction,3,IT 122,,,,,
+,,GSTS,"Science, Technology, and Society",3,,,GENTREP,The Entrepreneurial Mind,3,,,,,,
+,,GENVI,Environmental Science,3,,,GRVA,Reading Visual Art,3,,,,,,
+,,NSTP-CWTS 1,Foundations of Service,3,,,NSTP-CWTS 2,Social Awareness and Empowerment for Service,3,NSTP-CWTS 1,,,,,
+,,FIT OA,Physical Activity Towards Health and Fitness (Outdoor and Adventure Activities),2,,,FIT AQ,Physical Activity Towards Health and Fitness (Aquatics),2,,,,,,
+,,CFE 103,Catholic Foundation of Mission,3,,,CFE 104,CICM Missionary Identity,3,CFE 103,,,,,
+,,,TOTAL UNITS,23,,,,TOTAL UNITS,23,,,,,,
+,,,,,,,,,,,,,,,
+,,Course No.,Course Descriptive Title,Units,Pre-requisite,,,,,,,,,,
+,,Short Term,,,,,,,,,,,,,
+,,CS 314,Social and Personal Development in the ICT Workplace,3,"CS 111, GSELF",,,,,,,,,,
+,,CS 315,Technology-Assisted Presentation and Presentation,3,"CS 111, GPCOM",,,,,,,,,,
+,,GETHICS,Ethics,3,,,,,,,,,,,
+,,,TOTAL UNITS,9,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,THIRD YEAR,Course No.,Course Descriptive Title,Units,Pre-requisite,,Course No.,Course Descriptive Title,Units,Pre-requisite,,,,,
+,,1st Semester,,,,,2nd Semester,,,,,,,,
+,,IT 311,Applications Development,2,IT 122,,IT 321,IT Project 1,3,3rd year standing,,,,,
+,,IT 311L,Applications Development (Lab),1,IT 122,,IT 322,Data Analytics,2,IT 221,,,,,
+,,IT 312,Web Technologies,2,IT 212,,IT 322L,Data Analytics (Lab),1,IT 221,,,,,
+,,IT 312L,Web Technologies (Lab),1,IT 212,,IT 323,System Administration and Maintenance,2,IT 213,,,,,
+,,IT 313,Software Engineering,3,"IT 211, IT 221",,IT 323L,System Administration and Maintenance (Lab),1,IT 213,,,,,
+,,IT 314,Social and Professional Issues in Information Technology,3,"GETHICS, 
+IT 231",,IT 324,System Integration and Architecture,3,"IT 211, IT 222",,,,,
+,,IT 315,Technopreneurship,3,"GENTREP, 
+IT 211",,IT 325,Field Trips and Seminars,3,3rd year standing,,,,,
+,,ITE ,Elective 1,3,3rd year standing,,ITE,Elective 2,3,3rd year standing,,,,,
+,,CFE 105A,"CICM in Action: Justice, Peace, and Integrity of Creation, Indigenous Peoples, and Interreligious Dialogue",1.5,"CFE103,      
+CFE 104",,CFE 105B,CICM in Action:Environmental Planning and Management and Disaster Risk Reduction Management,1.5,CFE 105A,,,,,
+,,,TOTAL UNITS,19.5,,,,TOTAL UNITS,19.5,,,,,,
+,,,,,,,,,,,,,,,
+,,Course No.,Course Descriptive Title,Units,Pre-requisite,,,,,,,,,,
+,,Short Term,,,,,,,,,,,,,
+,,IT 331,Information Assurance and Security,3,core courses,,,,,,,,,,
+,,ITE ,Elective 3,3,3rd year standing,,,,,,,,,,
+,,,TOTAL UNITS,6,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,FOURTH YEAR,Course No.,Course Descriptive Title,Units,Pre-requisite,,Course No.,Course Descriptive Title,Units,Pre-requisite,,,,,
+,,1st Semester,,,,,2nd Semester,,,,,,,,
+,,IT 411,IT Project 2,3,IT 321,,IT 421,Practicum,9,4th year standing,,,,,
+,,IT 412,IT Resource Management,3,"IT 313, IT 324",,CFE 106B,Embracing the CICM Mission ,1.5,CFE 106A,,,,,
+,,FOR LANG 1,Foreign Language 1,3,,,,,,,,,,,
+,,ITE ,Elective 4,3,3rd year standing,,,,,,,,,,
+,,ITE ,Elective 5,3,3rd year standing,,,,,,,,,,
+,,CFE 106A,Embracing the CICM Mission ,1.5,CFE 105B,,,,,,,,,,
+,,,TOTAL UNITS,16.5,,,,TOTAL UNITS,10.5,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,CS Electives,,,
+,,,,,,,,,,,,Course No.,Course Description,"Units Lec / Lab",Pre-Req.
+,,,,,,,,,,,,ITE 10,Advanced Information Management,3,3rd year standing
+,,,,,,,,,,,,ITE 11,Advanced Networking,2     /    1,3rd year standing
+,,,,,,,,,,,,ITE 12,Advanced System Administration,3,3rd year standing
+,,,,,,,,,,,,ITE 13,Advanced WebTechnologies ,2     /    1,3rd year standing
+,,,,,,,,,,,,ITE 14,UX Concepts and Design,3,3rd year standing
+,,,,,,,,,,,,ITE 15,IT Security Management,3,3rd year standing
+,,,,,,,,,,,,ITE 16,Data Warehousing,3,3rd year standing
+,,,,,,,,,,,,ITE 17,Data Mining,2     /    1,3rd year standing
+,,,,,,,,,,,,ITE 18,Advanced Applications Development,2     /    1,3rd year standing
+,,,,,,,,,,,,ITE 19,Knowledge Management,3,3rd year standing
+,,,,,,,,,,,,ITE 20,IT Project Planning and Management  ,3,3rd year standing
+,,,,,,,,,,,,ITE 21,Advanced Software Engineering,3,3rd year standing
+,,,,,,,,,,,,ITE 22,Graphics Technologies,2     /    1,3rd year standing
+,,,,,,,,,,,,ITE 23,Electronic Commerce,3,3rd year standing
+,,,,,,,,,,,,ITE 24,Mobile Computing,2     /    1,3rd year standing
+,,,,,,,,,,,,ITE 25,Intelligent Systems,3,3rd year standing
+,,,,,,,,,,,,ITE 26,Current Trends 1,3,3rd year standing
+,,,,,,,,,,,,ITE 27,Current Trends 2,3,3rd year standing
+,,,,,,,,,,,,ITE 28,Special Topics 1,3,3rd year standing
+,,,,,,,,,,,,ITE 29,Special Topics 2,3,3rd year standing
+,,,,,,,,,,,,ITE 30,Information Technology Certification Review,3,3rd year standing
