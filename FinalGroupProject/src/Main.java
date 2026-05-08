@@ -34,7 +34,8 @@ public class Main {
                     case 2:
                         Bsit.showSubjectsWithGrades();
                     case 3:
-
+                        AddCourse courseAdder =	new	AddCourse();
+                        courseAdder.addExtraCourse(userInput, "src\\BSIT.csv");
                     case 4:
 
                     case 5:
