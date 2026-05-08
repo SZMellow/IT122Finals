@@ -55,6 +55,70 @@ public class CsvReader {
 
         }
     }
+    public void showSubjectsWithGrades() throws FileNotFoundException {
+        fileReader = new Scanner(spreadsheet);
+        Scanner scn = new Scanner(System.in);
+        String currentYearHeader = "FIRST YEAR";
+
+        while (fileReader.hasNextLine()) {
+            line = fileReader.nextLine();
+            // splits this with -1
+            cells = line.split(",", -1);
+
+            // if line is empty then continue
+            if (cells.length < 5) continue;
+
+            // Update the Year (Checks Column 1)
+            if (!cells[1].isEmpty() && cells[1].contains("YEAR")) {
+                currentYearHeader = cells[1];
+            }
+
+            // Detect Term Headers and Pause
+            if (line.contains("1st Semester")) {
+                printTermHeader(currentYearHeader, "1st Semester");
+            } else if (line.contains("2nd Semester")) {
+                System.out.println("\nPress Enter to see 2nd Semester...");
+                scn.nextLine();
+                printTermHeader(currentYearHeader, "2nd Semester");
+            } else if (line.contains("Short Term")) {
+                System.out.println("\nPress Enter to see Short Term...");
+                scn.nextLine();
+                printTermHeader(currentYearHeader, "Short Term");
+            }
+
+
+            // We check cells.length > 4 to safely access cells[2], [3], and [4]
+            if (cells.length >= 5) {
+                String courseNo = cells[2].trim();
+                String title = cells[3].trim();
+                String units = cells[4].trim();
+
+                // Only print if it's an actual course (not empty, not a header, not total)
+                if (!courseNo.isEmpty() && !courseNo.equalsIgnoreCase("Course No.") && !title.contains("TOTAL UNITS")) {
+                    displayRow(courseNo, title, units);
+                }
+            }
+
+
+            //if 2nd Sem row, you need to check the higher indices:
+            if (cells.length >= 10) {
+                String courseNo2 = cells[7].trim();
+                String title2 = cells[8].trim();
+                String units2 = cells[9].trim();
+
+                if (!courseNo2.isEmpty() && !courseNo2.equalsIgnoreCase("Course No.") && !title2.contains("TOTAL UNITS")) {
+                    displayRow(courseNo2, title2, units2);
+                }
+            }
+        }
+    }
+    private void printTermHeader(String year, String term) {
+        //tbd by rovic
+    }
+
+    private void displayRow(String code, String title, String units) {
+        //tbd by rovic
+    }
     /*public void makeSpreadsheet() {
         JFrame frame = new JFrame("Simple Spreadsheet");
 
