@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
-        CsvReader Bsit = new CsvReader("src\\BSIT.csv");
+        CsvReader Bsit = new CsvReader("C:\\Users\\Admin\\IdeaProjects\\IT122Finals\\FinalGroupProject\\src\\BSIT.csv");
         Scanner userInput = new Scanner(System.in);
         int choice, cont;
         do {
@@ -32,7 +32,7 @@ public class Main {
                     case 1:
 
                     case 2:
-
+                        Bsit.showSubjectsWithGrades();
                     case 3:
 
                     case 4:
