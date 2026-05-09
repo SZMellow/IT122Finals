@@ -37,6 +37,17 @@ public class Main {
                         AddCourse courseAdder =	new	AddCourse();
                         courseAdder.addExtraCourse(userInput, "src\\BSIT.csv");
                     case 4:
+ System.out.print("Enter course code: ");
+    String targetCourse = userInput.nextLine();
+
+    System.out.print("Enter new title: ");
+    String newTitle = userInput.nextLine();
+
+    new editCourse().editingCourse(
+            "src\\BSIT.csv",
+            targetCourse,
+            newTitle
+    );
 
                     case 5:
                         Bsit.printSpreadsheet();
