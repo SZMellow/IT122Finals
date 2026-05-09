@@ -5,8 +5,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
-    String path = System.getProperty("user.dir") + "/src/BSIT.csv";
-CsvReader Bsit = new CsvReader(path);
+  CsvReader Bsit = new CsvReader("src/BSIT.csv");
         Scanner userInput = new Scanner(System.in);
         int choice, cont;
         do {
