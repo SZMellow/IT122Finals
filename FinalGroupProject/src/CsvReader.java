@@ -112,6 +112,53 @@ public class CsvReader {
             }
         }
     }
+    public void showSubjectsByTerm() {
+        try {
+            fileReader = new Scanner(spreadsheet);
+            String currentYearHeader = "FIRST YEAR";
+
+            while (fileReader.hasNextLine()) {
+                line = fileReader.nextLine();
+                cells = line.split(",", -1);
+
+                if (cells.length < 5) continue;
+
+                if (!cells[1].isEmpty() && cells[1].contains("YEAR")) {
+                    currentYearHeader = cells[1];
+                }
+
+                if (line.contains("1st Semester")) {
+                    printTermHeader(currentYearHeader, "1st Semester");
+                } else if (line.contains("2nd Semester")) {
+                    printTermHeader(currentYearHeader, "2nd Semester");
+                } else if (line.contains("Short Term")) {
+                    printTermHeader(currentYearHeader, "Short Term");
+                }
+
+                if (cells.length >= 5) {
+                    String courseNo = cells[2].trim();
+                    String title = cells[3].trim();
+                    String units = cells[4].trim();
+
+                    if (!courseNo.isEmpty() && !courseNo.equalsIgnoreCase("Course No.") && !title.contains("TOTAL UNITS")) {
+                        displayRow(courseNo, title, units);
+                    }
+                }
+
+                if (cells.length >= 10) {
+                    String courseNo2 = cells[7].trim();
+                    String title2 = cells[8].trim();
+                    String units2 = cells[9].trim();
+
+                    if (!courseNo2.isEmpty() && !courseNo2.equalsIgnoreCase("Course No.") && !title2.contains("TOTAL UNITS")) {
+                        displayRow(courseNo2, title2, units2);
+                    }
+                }
+            }
+        } catch (Exception e) {
+            System.out.println("Error reading file: " + e.getMessage());
+        }
+    }
     private void printTermHeader(String year, String term) {
         System.out.println("==============================================================");
         System.out.println(year + " - " + term);
