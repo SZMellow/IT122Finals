@@ -5,7 +5,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
-        CsvReader Bsit = new CsvReader("C:\\Users\\Admin\\IdeaProjects\\IT122Finals\\FinalGroupProject\\src\\BSIT.csv");
+    String path = System.getProperty("user.dir") + "/src/BSIT.csv";
+CsvReader Bsit = new CsvReader(path);
         Scanner userInput = new Scanner(System.in);
         int choice, cont;
         do {
@@ -35,7 +36,7 @@ public class Main {
                         Bsit.showSubjectsWithGrades();
                     case 3:
                         AddCourse courseAdder =	new	AddCourse();
-                        courseAdder.addExtraCourse(userInput, "src\\BSIT.csv");
+                        courseAdder.addExtraCourse(userInput, "/src/BSIT.csv");
                     case 4:
  System.out.print("Enter course code: ");
     String targetCourse = userInput.nextLine();
@@ -44,7 +45,7 @@ public class Main {
     String newTitle = userInput.nextLine();
 
     new editCourse().editingCourse(
-            "src\\BSIT.csv",
+            "/src/BSIT.csv",
             targetCourse,
             newTitle
     );
