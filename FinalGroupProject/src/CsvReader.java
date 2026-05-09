@@ -113,11 +113,17 @@ public class CsvReader {
         }
     }
     private void printTermHeader(String year, String term) {
-        //tbd by rovic
+        System.out.println("==============================================================");
+        System.out.println(year + " - " + term);
+        System.out.println("==============================================================");
+        System.out.printf("%-14s %-43s %s\n",
+                "Course No.", "Descriptive Title", "Units");
+        System.out.println("--------------------------------------------------------------");
     }
 
     private void displayRow(String code, String title, String units) {
-        //tbd by rovic
+        System.out.printf("%-15s %-45s %s\n",
+                code, title, units);
     }
     /*public void makeSpreadsheet() {
         JFrame frame = new JFrame("Simple Spreadsheet");
