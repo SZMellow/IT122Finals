@@ -1,33 +1,46 @@
-import java.io.*;
-import java.util.Scanner;
 
-public class editCourse{
+public class editCourse {
 
-    public void editingCourse(String file, String targetCourse, String newTitle){
+    public void editingCourse(String file, String targetCourse, String newTitle) {
         File originalFile = new File(file);
-        File tempFile = new File("src\\BSIT_temporary.csv");
+        File tempFile = new File(originalFile.getParent(), "BSIT_temporary.csv");
 
-                try (Scanner courseChanger = new Scanner(originalFile);
-                    PrintWriter writer = new PrintWriter(new FileWriter(tempFile))) {
+        boolean found = false;
 
-                        while (courseChanger.hasNextLine()) {
-                            String line = courseChanger.nextLine();
+        try (
+            Scanner courseChanger = new Scanner(originalFile);
+            PrintWriter writer = new PrintWriter(new FileWriter(tempFile))
+        ) {
+            while (courseChanger.hasNextLine()) {
+                String line = courseChanger.nextLine();
+                String[] columns = line.split(",", -1);
 
-                            String[] columns = line.split(",", -1);
-                            if (columns.length > 3 && columns[2].trim().equalsIgnoreCase(targetCourse)) {
-                                columns[3] = newTitle; // The edit happens here
-                                line = String.join(",", columns); // Reconstruct the line
-                            }
-                            writer.println(line);
-                        }
-                } catch (IOException e) {
-                    System.out.println("Error: " + e.getMessage());
-                    return;
+                if (columns.length > 3 && columns[2].trim().equalsIgnoreCase(targetCourse.trim())) {
+                    columns[3] = newTitle;
+                    line = String.join(",", columns);
+                    found = true;
                 }
 
+                writer.println(line);
+            }
+
+        } catch (IOException e) {
+            System.out.println("Error: " + e.getMessage());
+            return;
+        }
+
+        if (!found) {
+            tempFile.delete();
+            System.out.println("Course [" + targetCourse + "] not found.");
+            return;
+        }
+
         if (originalFile.delete()) {
-            tempFile.renameTo(originalFile);
-            System.out.println("Course [" + targetCourse + "] updated successfully.");
+            if (tempFile.renameTo(originalFile)) {
+                System.out.println("Course [" + targetCourse + "] updated successfully.");
+            } else {
+                System.out.println("Error: Could not rename temporary file.");
+            }
         } else {
             System.out.println("Error: File is currently in use. Close the CSV file first.");
         }
